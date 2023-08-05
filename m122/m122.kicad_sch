@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 603dd344-38a4-40e7-ab49-68b29cf7c2fa)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 22.86 125.73) (size 29.21 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2a952380-c220-474d-9a4a-ddacf7fbcdae)
+    (property "Sheetname" "Power" (at 22.86 125.0184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "power.kicad_sch" (at 22.86 145.3646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "m122"
+        (path "/603dd344-38a4-40e7-ab49-68b29cf7c2fa" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 22.86 167.64) (size 29.21 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 988e38c3-0841-40fb-94f3-83d897791f3a)
+    (property "Sheetname" "Connectors" (at 22.86 166.9284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "matrix.kicad_sch" (at 22.86 184.7346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "m122"
+        (path "/603dd344-38a4-40e7-ab49-68b29cf7c2fa" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 24.13 26.67) (size 26.67 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid db46ad62-a36c-4aa1-9a5b-e4213350f154)
+    (property "Sheetname" "Controller" (at 24.13 25.9584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "uC.kicad_sch" (at 24.13 47.5746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "m122"
+        (path "/603dd344-38a4-40e7-ab49-68b29cf7c2fa" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 22.86 74.93) (size 29.21 21.59) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid e4618fe5-154b-4e8b-b125-5e78a722f363)
+    (property "Sheetname" "USB" (at 22.86 74.2184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb.kicad_sch" (at 22.86 97.1046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "m122"
+        (path "/603dd344-38a4-40e7-ab49-68b29cf7c2fa" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
