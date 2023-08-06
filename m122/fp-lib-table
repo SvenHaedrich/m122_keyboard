@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "m122-models")(type "KiCad")(uri "${KIPRJMOD}/m122-models.pretty")(options "")(descr ""))
+)
