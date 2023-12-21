@@ -4,6 +4,13 @@
 
   (paper "A4")
 
+  (title_block
+    (title "IBM M122 Keyboard Interface")
+    (date "2023-12-21")
+    (rev "0.2")
+    (company "SevenLab")
+  )
+
   (lib_symbols
     (symbol "Connector:USB_C_Receptacle_USB2.0" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at -10.16 19.05 0)

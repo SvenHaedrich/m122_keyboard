@@ -8,10 +8,10 @@ via USB connector, or via Bluetooth.
 ## Parts
 
 Beside the assembled PCB you require:
-- An IBM Keyboard
+- A matching IBM Keyboard
 - An external LiPO cell - the unit was designed with a LP103048JU 1.500 m Ah cell in mind
-- One 8 pin connector for the flat flex comming from the keyboad 5-520315-8 from [AMP](doc/ENG_CD_520355_L2.pdf) DigiKey P/N 5-520315-8-ND
-- One 20 pin connector for the flat flex comming from the keyboad 7-520355-0 from [AMP](doc/ENG_CD_520355_L2.pdf) DigiKey P/N A144436-ND
+- One 8 pin connector for the flat flex coming from the keyboad 5-520315-8 from [AMP](doc/ENG_CD_520355_L2.pdf) DigiKey P/N 5-520315-8-ND
+- One 20 pin connector for the flat flex coming from the keyboad 7-520355-0 from [AMP](doc/ENG_CD_520355_L2.pdf) DigiKey P/N A144436-ND
 
 ## Tools
 
