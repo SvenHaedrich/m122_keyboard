@@ -1,9 +1,12 @@
-# kicad_m122
-KiCad project for a IBM M122 keyboard controller
+# m122_keyboard
+Project for a IBM M122 keyboard controller
 
 This is a PCB that replaces the original part from IBM.
+
 It features an nRF52840 microcontroller and allows to use the keyboard
 via USB connector, or via Bluetooth.
+
+The firmware is based on the [ZMK](https://github.com/zmkfirmware) project.
 
 ## Parts
 
@@ -15,7 +18,7 @@ Beside the assembled PCB you require:
 
 ## Tools
 
-You need a debug adapter (JLink) with 6 pin Tag-Connect for the initial flash programming of the board
+You need a debug adapter (JLink) with 6 pin [Tag-Connect](https://www.tag-connect.com) for the initial flash programming of the board
 
 ## Order
 
@@ -23,3 +26,7 @@ When ordering the pcb from [JLC](https://jlcpcb.com) you need to specify
 - Via Covering Epoxy Filled & Capped
 - Min via hole size 0.2 mm
 
+## Setup
+
+* Use the nrf-Flash-Tool to flash the bootloader to the nrf52840
+* Use drag-and-drop of the uf2 build output to flash the keyboard firmware
