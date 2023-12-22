@@ -1,0 +1,34 @@
+# Copyright (c) 2023 The ZMK Contributers
+# SPDX-Licencse-Identifier: MIT
+
+if BOARD_IBM122
+
+config ZMK_KEYBOARD_NAME
+    default "IBM M122"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+config ZMK_RTT_LOGGING
+    default y
+
+ config LOG_BACKEND_SHOW_COLOR
+    default n
+
+endif # BOARD_IBM122
+
+config USE_DT_CODE_PARTITION
+    default y

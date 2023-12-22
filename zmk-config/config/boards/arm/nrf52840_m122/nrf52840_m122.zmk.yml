@@ -1,0 +1,11 @@
+file_format: "1"
+id: ibm_m122
+name: ibm_m122
+type: board
+url: https://github.com/SvenHaedrich/kicad_m122
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+  - ble
