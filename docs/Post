@@ -1,4 +1,4 @@
-__Total Makeover of a Model M122__
+__Total Makeover of a Model M122 aka Battlecruiser__
 
 This is the story of my journey to bring todays technology to an IBM M122 keyboard. 
 I started my professional carrer as a computer developer using the monsterous IBM keyboards that came with the IBM data terminals. 
@@ -8,6 +8,7 @@ Notwithstanding the superior mechanical qualities of a beast that features a ste
 __The Beginning__
 
 My first step was to order a surviving specimen of the IBM M122 from Ebay. 
+I found one that is in pretty good nick.
 My baby has a German ISO Layout, built in January 1992, and the part number reads 139 4312.
 I decided to discard the slightly discussting crusted connection cord.
 Furthermore, I investigated the options to add adapters to the original keyboard controller and decided that all the available converters are more makeshift solutions than anything else.
@@ -54,7 +55,9 @@ I tell myself that I avoid unnecessary mechanical stress on the delicate cells.
 
 ![Final PCB version](keyboard_v0_2_pcb.png)
 
-Still left on my list is a nice feedthrough of the USB connector. For now I just have a cable dangling out of the original outlet. This is connected to the USB connector on the controller PCB.
+The board has a reset button which can be really useful as the board can run from battery power which can make a power down reset a time consuming act.
+I admit that I drilled a small hole into the outer shell of the keyboard to allow actuation of the button by the a mangled paperclip. 
+Still left on my to-do list is a nice feedthrough for the USB cable. For now I just have the cable dangling out of the original outlet. This is connected to the USB connector on the controller PCB.
 
 __The Firmware__
 
