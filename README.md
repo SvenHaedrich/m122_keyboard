@@ -1,11 +1,13 @@
 # m122_keyboard
 Project for a IBM M122 keyboard controller
 
-This is a PCB that replaces the original part from IBM.
+This is a project that replaces the original part from IBM with a nice modern solution.
 It features a nRF52840 microcontroller and allows to use the keyboard
 via USB connector, or via Bluetooth.
 
 The firmware is based on the [ZMK](https://github.com/zmkfirmware) project.
+
+![Assembled PCB](docs/pcb_assembled.png)
 
 ## Parts
 
