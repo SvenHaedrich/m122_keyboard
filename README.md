@@ -1,5 +1,5 @@
 # m122_keyboard
-Project for a IBM M122 keyboard controller
+Project for an IBM M122 keyboard controller
 
 This is a project that replaces the original part from IBM with a nice modern solution.
 It features a nRF52840 microcontroller and allows to use the keyboard
