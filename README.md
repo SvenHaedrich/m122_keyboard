@@ -31,3 +31,14 @@ When ordering the pcb from [JLC](https://jlcpcb.com) you need to specify
 
 * Use the nrf-Flash-Tool to flash the bootloader to the nrf52840
 * Use drag-and-drop of the uf2 build output to flash the keyboard firmware
+
+## Build the firmware
+
+Set the zmk project up as described in [Toolchain Setup](https://zmk.dev/docs/development/setup).
+Go to the zmk base directory, then run
+    cd app
+    west build --board nrf52840_m122 . -- -DZMK_EXTRA_MODULE=(..)/m122_keyboard/zmk-config
+
+## Bootloader
+
+The project uses the [Adafruit](https://github.com/SvenHaedrich/Adafruit_nRF52_Bootloader.git) bootloader.

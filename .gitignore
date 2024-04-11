@@ -28,5 +28,8 @@ fp-info-cache
 *.xml
 *.csv
 
+# python virtual environment
+.venv/
+
 # private folder
 private/
