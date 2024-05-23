@@ -17,3 +17,5 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
+include:
+  - board: nrf52840_m122
