@@ -48,7 +48,7 @@ Go to the zmk base directory, then run
     cd app
     west build --board nrf52840_m122 . -- -DZMK_EXTRA_MODULES=(..)/m122_keyboard/
 
-Replace `(..)` with the path of this project.
+Replace `(..)` with the path of this project. Note, that the tilde (`~`) is not eveluated correctly in that pathname.
 
 ## Bootloader
 
