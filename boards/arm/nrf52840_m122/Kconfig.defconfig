@@ -23,7 +23,7 @@ config ZMK_USB
     default y
 
 config ZMK_RTT_LOGGING
-    default y
+    default n
 
  config LOG_BACKEND_SHOW_COLOR
     default n
