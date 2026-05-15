@@ -18,4 +18,4 @@
 #
 ---
 include:
-  - board: nrf52840_m122
+  - board: nrf52840_m122//zmk
