@@ -1,3 +1,4 @@
+name: zmk-keyboards-m122
 build:
   settings:
     board_root: .

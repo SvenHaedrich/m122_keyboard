@@ -5,7 +5,6 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
-
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -16,7 +15,6 @@
         zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
-        zephyr,console = &cdc_acm_uart;
         zmk,battery = &vbatt;
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
@@ -33,7 +31,7 @@ RC(4,1) RC(4,2)  RC(4,4) RC(5,4) RC(5,5) RC(5,6) RC(5,7) RC(4,7) RC(4,8) RC(5,8)
 RC(5,1) RC(3,1)  RC(3,2)   RC(3,4) RC(3,5) RC(3,6) RC(3,7) RC(2,7) RC(2,8) RC(3,8) RC(3,12) RC(3,13) RC(3,14) RC(2,14) RC(2,12)    RC(1,15)  RC(6,16) RC(1,16) RC(3,16)  RC(3,15) RC(3,17) RC(3,18) RC(3,0)
 RC(2,1) RC(2,2)  RC(1,2)     RC(6,4) RC(6,5) RC(6,6) RC(6,7) RC(7,7) RC(7,8) RC(6,8) RC(6,12) RC(6,13) RC(6,14) RC(7,14) RC(1,14)                     RC(7,16)           RC(6,15) RC(6,17) RC(6,18) RC(6,0)
 RC(6,1) RC(6,2)  RC(0,3) RC(0,4) RC(1,4) RC(1,5) RC(1,6) RC(1,7) RC(0,7) RC(0,8) RC(1,8) RC(1,12) RC(1,13) RC(0,14)                RC(1,3)   RC(1,0)  RC(7,19) RC(6,19)  RC(1,1)  RC(1,17) RC(1,18) RC(0,19)
-RC(7,2) RC(7,1)  RC(7,0) RC(0,0)                         RC(0,1)                                                         RC(7,3)   RC(0,2)            RC(7,15)           RC(0,15) RC(0,17) RC(0,18) 
+RC(7,2) RC(7,1)  RC(7,0) RC(0,0)                         RC(0,1)                                                         RC(7,3)   RC(0,2)            RC(7,15)           RC(0,15) RC(0,17) RC(0,18)
         >;
     };
 
@@ -100,12 +98,8 @@ RC(7,2) RC(7,1)  RC(7,0) RC(0,0)                         RC(0,1)                
     status = "okay";
 };
 
-&usbd {
+zephyr_udc0: &usbd {
     status = "okay";
-    cdc_acm_uart: cdc_acm_uart {
-        compatible = "zephyr,cdc-acm-uart";
-        label = "CDC_ACM_0";
-    };
 };
 
 &flash0 {
