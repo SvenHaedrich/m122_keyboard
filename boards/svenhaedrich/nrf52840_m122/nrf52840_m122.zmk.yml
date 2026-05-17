@@ -1,11 +1,12 @@
 file_format: "1"
-id: ibm_m122
+id: nrf52840_m122//zmk
 name: ibm_m122
 type: board
-url: https://github.com/SvenHaedrich/kicad_m122
+url: https://github.com/SvenHaedrich/m122_keyboard
 arch: arm
 features:
   - keys
+  - studio
 outputs:
   - usb
   - ble

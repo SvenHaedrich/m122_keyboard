@@ -18,4 +18,6 @@
 #
 ---
 include:
-  - board: nrf52840_m122
+  - board: nrf52840_m122//zmk
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y

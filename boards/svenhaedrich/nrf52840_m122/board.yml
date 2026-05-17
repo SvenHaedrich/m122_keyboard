@@ -1,0 +1,7 @@
+board:
+  name: nrf52840_m122
+  vendor: svenhaedrich
+  socs:
+    - name: nrf52840
+      variants:
+        - name: zmk

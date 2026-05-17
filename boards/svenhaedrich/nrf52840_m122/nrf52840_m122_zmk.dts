@@ -5,7 +5,10 @@
 
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
+#include <common/nordic/nrf52840_uf2_boot_mode.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
+
+#include "nrf52840_m122-layouts.dtsi"
 
 / {
     model = "IBM M122";
@@ -15,12 +18,13 @@
         zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
+        zephyr,boot-mode = &boot_retention;
         zmk,battery = &vbatt;
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical_layout = &physical_layout0;
+        zmk,magic-boot-mode = &adafruit_boot_retention;
     };
 
-    default_transform: keymap_transform_0 {
+    matrix_transform0: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <20>;
         rows = <8>;
@@ -102,6 +106,38 @@ zephyr_udc0: &usbd {
     status = "okay";
 };
 
+&reg1 {
+    regulator-initial-mode = <NRF5X_REG_MODE_DCDC>;
+};
+
+&uicr {
+    nfct-pins-as-gpios;
+};
+
+&gpregret1 {
+    adafruit_boot_retention: retention@0 {
+        compatible = "zephyr,retention";
+        status = "okay";
+        reg = <0x0 0x1>;
+    };
+};
+
+/ {
+    magic_mapper {
+        compatible = "zmk,bootmode-to-magic-mapper";
+        status = "okay";
+
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        boot_retention: retention@0 {
+            compatible = "zephyr,retention";
+            status = "okay";
+            reg = <0x0 0x1>;
+        };
+    };
+};
+
 &flash0 {
     /*
      * For more information, see:
@@ -119,7 +155,7 @@ zephyr_udc0: &usbd {
 
         code_partition: partition@1000 {
             label = "code_partition";
-            reg = <0x00026000 0x000d3000>;
+            reg = <0x00001000 0x000d3000>;
         };
 
         /*
